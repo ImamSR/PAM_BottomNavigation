@@ -4,8 +4,7 @@ apply plugin: 'kotlin-android-extensions'
 
 android {
     compileSdkVersion 30
-    buildToolsVersion "30.0.2"
-
+    //    namespace "http://schemas.android.com/apk/res-auto"
     defaultConfig {
         applicationId "com.example.bottomnavigationwithfab"
         minSdkVersion 21
@@ -22,6 +21,9 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    namespace 'com.example.bottomnavigationwithfab'
+//    namespace 'com.example.bottomnavigationwithfab'
+//    namespace "http://schemas.android.com/apk/res-auto"
 }
 
 dependencies {
